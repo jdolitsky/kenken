@@ -1,0 +1,134 @@
+# 26Feb9.ken
+# Friday, 26 February 2010 10:19:54
+dim 9
+ADD  17 [ 13 22 23 ] 1
+MUL  12 [ 14 15 16 ] 2
+ADD  16 [ 17 27 28 ] 1
+MUL  28 [ 18 19 ] 0
+SUB  5 [ 21 31 ] 2
+ADD  10 [ 24 25 26 ] 0
+SUB  2 [ 29 39 ] 2
+DIV  2 [ 32 33 ] 3
+MUL  126 [ 34 35 36 ] 1
+DIV  2 [ 37 38 ] 0
+DIV  2 [ 41 51 ] 1
+SUB  8 [ 42 52 ] 0
+ADD  9 [ 43 53 ] 2
+ADD  14 [ 44 45 46 ] 3
+SUB  3 [ 47 57 ] 2
+ADD  20 [ 48 49 58 ] 1
+NONE  1 [ 59 ] 0
+SUB  5 [ 54 64 ] 1
+SUB  4 [ 55 65 ] 2
+DIV  2 [ 56 66 ] 0
+ADD  11 [ 61 62 71 ] 3
+MUL  160 [ 63 73 74 ] 0
+ADD  16 [ 72 82 83 ] 2
+ADD  8 [ 81 91 ] 1
+SUB  1 [ 92 93 ] 0
+ADD  11 [ 84 94 ] 1
+NONE  5 [ 75 ] 1
+SUB  8 [ 85 95 ] 0
+MUL  40 [ 86 96 ] 1
+ADD  25 [ 67 76 77 ] 3
+NONE  6 [ 87 ] 0
+MUL  8 [ 97 98 ] 2
+MUL  144 [ 68 69 79 ] 2
+ADD  3 [ 78 88 ] 1
+SUB  1 [ 89 99 ] 0
+SUB  4 [ 11 12 ] 0
+#
+Solution
+9 5 8 2 6 1 3 7 4 
+6 8 1 5 3 2 4 9 7 
+1 6 3 9 2 7 8 4 5 
+8 1 2 3 7 4 5 6 9 
+4 9 7 6 8 3 2 5 1 
+7 2 5 1 4 6 9 3 8 
+2 3 4 8 5 9 7 1 6 
+5 4 9 7 1 8 6 2 3 
+3 7 6 4 9 5 1 8 2 
+#
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 0: length 8: SUB  5 [ 11 12 ]
+# Cage 1: length 47: ADD  17 [ 13 22 23 ]
+# Cage 2: length 12: MUL  12 [ 14 15 16 ]
+# Cage 3: length 52: ADD  16 [ 17 27 28 ]
+# Cage 4: length 2: MUL  28 [ 18 19 ]
+# Cage 5: length 8: SUB  5 [ 21 31 ]
+# Cage 6: length 24: ADD  10 [ 24 25 26 ]
+# Cage 7: length 14: SUB  2 [ 29 39 ]
+# Cage 8: length 8: DIV  2 [ 32 33 ]
+# Cage 9: length 12: MUL  126 [ 34 35 36 ]
+# Cage 10: length 8: DIV  2 [ 37 38 ]
+# Cage 11: length 8: DIV  2 [ 41 51 ]
+# Cage 12: length 2: SUB  8 [ 42 52 ]
+# Cage 13: length 8: ADD  9 [ 43 53 ]
+# Cage 14: length 48: ADD  14 [ 44 45 46 ]
+# Cage 15: length 12: SUB  3 [ 47 57 ]
+# Cage 16: length 28: ADD  20 [ 48 49 58 ]
+# Cage 17: length 1: NONE  1 [ 59 ]
+# Cage 18: length 8: SUB  5 [ 54 64 ]
+# Cage 19: length 10: SUB  4 [ 55 65 ]
+# Cage 20: length 8: DIV  2 [ 56 66 ]
+# Cage 21: length 35: ADD  11 [ 61 62 71 ]
+# Cage 22: length 6: MUL  160 [ 63 73 74 ]
+# Cage 23: length 52: ADD  16 [ 72 82 83 ]
+# Cage 24: length 6: ADD  8 [ 81 91 ]
+# Cage 25: length 16: SUB  1 [ 92 93 ]
+# Cage 26: length 8: ADD  11 [ 84 94 ]
+# Cage 27: length 1: NONE  5 [ 75 ]
+# Cage 28: length 2: SUB  8 [ 85 95 ]
+# Cage 29: length 2: MUL  40 [ 86 96 ]
+# Cage 30: length 2: ADD  25 [ 67 76 77 ]
+# Cage 34: length 1: NONE  6 [ 87 ]
+# Cage 35: length 4: MUL  8 [ 97 98 ]
+# Cage 36: length 14: MUL  144 [ 68 69 79 ]
+# Cage 37: length 2: ADD  3 [ 78 88 ]
+# Cage 38: length 16: SUB  1 [ 89 99 ]
+# 3602 updates 0.2 seconds
+# 
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 1: length 47: ADD  17 [ 13 22 23 ]
+# Cage 2: length 12: MUL  12 [ 14 15 16 ]
+# Cage 3: length 52: ADD  16 [ 17 27 28 ]
+# Cage 4: length 2: MUL  28 [ 18 19 ]
+# Cage 5: length 8: SUB  5 [ 21 31 ]
+# Cage 6: length 24: ADD  10 [ 24 25 26 ]
+# Cage 7: length 14: SUB  2 [ 29 39 ]
+# Cage 8: length 8: DIV  2 [ 32 33 ]
+# Cage 9: length 12: MUL  126 [ 34 35 36 ]
+# Cage 10: length 8: DIV  2 [ 37 38 ]
+# Cage 11: length 8: DIV  2 [ 41 51 ]
+# Cage 12: length 2: SUB  8 [ 42 52 ]
+# Cage 13: length 8: ADD  9 [ 43 53 ]
+# Cage 14: length 48: ADD  14 [ 44 45 46 ]
+# Cage 15: length 12: SUB  3 [ 47 57 ]
+# Cage 16: length 28: ADD  20 [ 48 49 58 ]
+# Cage 17: length 1: NONE  1 [ 59 ]
+# Cage 18: length 8: SUB  5 [ 54 64 ]
+# Cage 19: length 10: SUB  4 [ 55 65 ]
+# Cage 20: length 8: DIV  2 [ 56 66 ]
+# Cage 21: length 35: ADD  11 [ 61 62 71 ]
+# Cage 22: length 6: MUL  160 [ 63 73 74 ]
+# Cage 23: length 52: ADD  16 [ 72 82 83 ]
+# Cage 24: length 6: ADD  8 [ 81 91 ]
+# Cage 25: length 16: SUB  1 [ 92 93 ]
+# Cage 26: length 8: ADD  11 [ 84 94 ]
+# Cage 27: length 1: NONE  5 [ 75 ]
+# Cage 28: length 2: SUB  8 [ 85 95 ]
+# Cage 29: length 2: MUL  40 [ 86 96 ]
+# Cage 30: length 2: ADD  25 [ 67 76 77 ]
+# Cage 34: length 1: NONE  6 [ 87 ]
+# Cage 35: length 4: MUL  8 [ 97 98 ]
+# Cage 36: length 14: MUL  144 [ 68 69 79 ]
+# Cage 37: length 2: ADD  3 [ 78 88 ]
+# Cage 38: length 16: SUB  1 [ 89 99 ]
+# Cage 39: length 10: SUB  4 [ 11 12 ]
+# 4898 updates 0.2 seconds
+# 
+# 

@@ -1,0 +1,49 @@
+# 20OctNYT6.ken
+# Tuesday, 20 October 2009 22:15:20
+# As hard a 6-by-6 as I've ever seen.
+dim 6
+ADD  12 [ 11 12 22 ] 3
+SUB  3 [ 13 23 ] 2
+DIV  2 [ 14 24 ] 0
+MUL  16 [ 15 16 25 ] 1
+SUB  4 [ 26 36 ] 0
+ADD  8 [ 34 35 ] 3
+DIV  2 [ 32 33 ] 1
+DIV  3 [ 21 31 ] 0
+SUB  2 [ 41 51 ] 1
+SUB  3 [ 42 52 ] 2
+DIV  3 [ 43 44 ] 0
+ADD  13 [ 53 54 63 64 ] 1
+SUB  1 [ 61 62 ] 0
+SUB  3 [ 45 55 ] 2
+SUB  4 [ 46 56 ] 1
+DIV  2 [ 65 66 ] 0
+#
+Solution
+6 5 2 3 1 4 
+3 1 5 6 4 2 
+1 2 4 5 3 6 
+4 6 3 1 2 5 
+2 3 6 4 5 1 
+5 4 1 2 6 3 
+#
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 0: length 20: ADD  12 [ 11 12 22 ]
+# Cage 1: length 6: SUB  3 [ 13 23 ]
+# Cage 2: length 6: DIV  2 [ 14 24 ]
+# Cage 3: length 2: MUL  16 [ 15 16 25 ]
+# Cage 4: length 4: SUB  4 [ 26 36 ]
+# Cage 5: length 4: ADD  8 [ 34 35 ]
+# Cage 6: length 6: DIV  2 [ 32 33 ]
+# Cage 7: length 4: DIV  3 [ 21 31 ]
+# Cage 8: length 8: SUB  2 [ 41 51 ]
+# Cage 9: length 6: SUB  3 [ 42 52 ]
+# Cage 10: length 4: DIV  3 [ 43 44 ]
+# Cage 11: length 76: ADD  13 [ 53 54 63 64 ]
+# Cage 12: length 10: SUB  1 [ 61 62 ]
+# Cage 13: length 6: SUB  3 [ 45 55 ]
+# Cage 14: length 4: SUB  4 [ 46 56 ]
+# Cage 15: length 6: DIV  2 [ 65 66 ]
+# 2173 updates 0.3 seconds

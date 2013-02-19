@@ -1,0 +1,77 @@
+# 04OctNYT8.ken
+# Sunday, 04 October 2009 05:17:36
+# Very interesting.  Because of the fault lines
+# we know from the start the the sum of the 
+# MUL 60, DIV 3, and MUL 392 cages in rows
+# 5 and 6 must be 44.  Each cage has only two
+# possible sets of entries, and the sum of the
+# larger sets is 44.  So, from the beginning,
+# there is only one set of entries for each of these
+# cages.  With this information, solving is quick;
+# about 6-1/2 minutes.  On my first attempt, I had
+# used over 50 minutes, with little progress, until
+# I got the insight, then finished almost instantly.
+dim 8
+MUL  672 [ 11 21 31 32 ] 2
+DIV  2 [ 12 13 ] 3
+NONE  2 [ 22 ] 0
+MUL  49 [ 14 15 24 ] 2
+ADD  13 [ 16 17 27 ] 0
+ADD  17 [ 18 28 37 38 ] 1
+ADD  10 [ 26 36 46 ] 3
+SUB  5 [ 25 35 ] 1
+ADD  11 [ 23 33 43 ] 1
+NONE  8 [ 34 ] 0
+SUB  7 [ 41 42 ] 0
+MUL  20 [ 44 45 ] 2
+DIV  3 [ 47 48 ] 0
+ADD  15 [ 51 52 61 62 ] 3
+MUL  60 [ 53 54 63 ] 0
+ADD  13 [ 55 56 66 ] 1
+DIV  3 [ 64 65 ] 2
+MUL  392 [ 57 58 67 68 ] 2
+SUB  2 [ 71 81 ] 2
+ADD  15 [ 72 73 74 ] 1
+ADD  6 [ 82 83 84 ] 0
+ADD  11 [ 75 76 ] 0
+ADD  21 [ 77 85 86 87 ] 1
+SUB  5 [ 78 88 ] 0
+#
+Solution
+2 4 8 1 7 6 3 5 
+8 2 1 7 6 5 4 3 
+6 7 3 8 1 2 5 4 
+1 8 7 4 5 3 6 2 
+3 5 6 2 8 4 1 7 
+4 3 5 6 2 1 7 8 
+7 6 4 5 3 8 2 1 
+5 1 2 3 4 7 8 6 
+#
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 0: length 52: MUL  672 [ 11 21 31 32 ]
+# Cage 1: length 8: DIV  2 [ 12 13 ]
+# Cage 2: length 1: NONE  2 [ 22 ]
+# Cage 3: length 1: MUL  49 [ 14 15 24 ]
+# Cage 4: length 40: ADD  13 [ 16 17 27 ]
+# Cage 5: length 220: ADD  17 [ 18 28 37 38 ]
+# Cage 6: length 24: ADD  10 [ 26 36 46 ]
+# Cage 7: length 6: SUB  5 [ 25 35 ]
+# Cage 8: length 30: ADD  11 [ 23 33 43 ]
+# Cage 9: length 1: NONE  8 [ 34 ]
+# Cage 10: length 2: SUB  7 [ 41 42 ]
+# Cage 11: length 2: MUL  20 [ 44 45 ]
+# Cage 12: length 4: DIV  3 [ 47 48 ]
+# Cage 13: length 172: ADD  15 [ 51 52 61 62 ]
+# Cage 14: length 12: MUL  60 [ 53 54 63 ]
+# Cage 15: length 40: ADD  13 [ 55 56 66 ]
+# Cage 16: length 4: DIV  3 [ 64 65 ]
+# Cage 17: length 8: MUL  392 [ 57 58 67 68 ]
+# Cage 18: length 12: SUB  2 [ 71 81 ]
+# Cage 19: length 36: ADD  15 [ 72 73 74 ]
+# Cage 20: length 6: ADD  6 [ 82 83 84 ]
+# Cage 21: length 6: ADD  11 [ 75 76 ]
+# Cage 22: length 172: ADD  21 [ 77 85 86 87 ]
+# Cage 23: length 6: SUB  5 [ 78 88 ]
+# 31342 updates 0.7 seconds

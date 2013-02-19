@@ -1,0 +1,64 @@
+# 16NovNYT8.ken
+# Monday, 16 November 2009 04:41:31
+dim 8
+SUB  1 [ 11 21 ] 1
+SUB  7 [ 31 41 ] 0
+ADD  18 [ 51 61 71 81 ] 1
+MUL  80 [ 12 22 32 ] 3
+MUL  15 [ 42 43 ] 2
+SUB  3 [ 52 53 ] 3
+MUL  24 [ 62 72 82 ] 0
+SUB  7 [ 63 73 ] 2
+MUL  60 [ 74 83 84 ] 1
+SUB  4 [ 13 14 ] 1
+DIV  2 [ 23 33 ] 0
+ADD  26 [ 24 34 35 36 ] 3
+ADD  13 [ 44 45 54 55 ] 1
+MUL  28 [ 64 65 66 ] 0
+MUL  40 [ 75 76 85 ] 2
+MUL  168 [ 86 87 88 ] 1
+MUL  120 [ 68 77 78 ] 0
+SUB  1 [ 46 56 ] 2
+ADD  9 [ 57 58 67 ] 1
+ADD  12 [ 37 47 48 ] 0
+ADD  19 [ 18 27 28 38 ] 2
+DIV  4 [ 16 17 ] 1
+ADD  12 [ 15 25 26 ] 0
+#
+Solution
+5 8 7 3 6 4 1 2 
+4 2 3 8 1 5 6 7 
+1 5 6 7 3 8 2 4 
+8 3 5 1 2 7 4 6 
+3 7 4 2 8 6 5 1 
+2 6 8 4 7 1 3 5 
+7 4 1 6 5 2 8 3 
+6 1 2 5 4 3 7 8 
+#
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 0: length 14: SUB  1 [ 11 21 ]
+# Cage 1: length 2: SUB  7 [ 31 41 ]
+# Cage 2: length 192: ADD  18 [ 51 61 71 81 ]
+# Cage 3: length 6: MUL  80 [ 12 22 32 ]
+# Cage 4: length 2: MUL  15 [ 42 43 ]
+# Cage 5: length 10: SUB  3 [ 52 53 ]
+# Cage 6: length 18: MUL  24 [ 62 72 82 ]
+# Cage 7: length 2: SUB  7 [ 63 73 ]
+# Cage 8: length 12: MUL  60 [ 74 83 84 ]
+# Cage 9: length 8: SUB  4 [ 13 14 ]
+# Cage 10: length 8: DIV  2 [ 23 33 ]
+# Cage 11: length 36: ADD  26 [ 24 34 35 36 ]
+# Cage 12: length 112: ADD  13 [ 44 45 54 55 ]
+# Cage 13: length 6: MUL  28 [ 64 65 66 ]
+# Cage 14: length 12: MUL  40 [ 75 76 85 ]
+# Cage 15: length 12: MUL  168 [ 86 87 88 ]
+# Cage 17: length 12: MUL  120 [ 68 77 78 ]
+# Cage 18: length 14: SUB  1 [ 46 56 ]
+# Cage 19: length 21: ADD  9 [ 57 58 67 ]
+# Cage 20: length 39: ADD  12 [ 37 47 48 ]
+# Cage 21: length 220: ADD  19 [ 18 27 28 38 ]
+# Cage 22: length 4: DIV  4 [ 16 17 ]
+# Cage 23: length 39: ADD  12 [ 15 25 26 ]
+# 22608 updates 0.6 seconds

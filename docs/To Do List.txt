@@ -1,0 +1,21 @@
+KenKen To Dos
+
+BUGFIX: In board.celebrate, del(self.focus) causes the problem with redraw.
+        Good idea to change the name of board.focus, also, due to conflict
+        with canvas method.
+
+Solver
+  0. Change dimesionDialog to reusable class (Model after tkSimpleDialog)
+  1. Longer term  Refactor code.  Add a Puzzle class.  Save it to allow exeprimenting
+     with DLX without having to reenter puzles manually.  Or, parse .ken file and
+     tile all the cages.
+
+Client
+  0. Control- clears all candidates.
+  1. Replay option with clock restart.
+  2. Help
+  3. Hints (sudoku style).
+  4. Fonts, colors, configuration file.
+  5. Redo(?), bookmarks (undo to bookmark)
+  6. Integrated calculator
+  7. Longer term. Hints (arithmetic.)  What should be allowed?  How to express?

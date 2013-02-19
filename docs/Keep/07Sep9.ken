@@ -1,0 +1,102 @@
+# 07Sep9.ken
+# Monday, 07 September 2009 10:03:31
+# Solver thrashed on home machine; abandoned
+# Worked easily on office machine.  Clearly memory bound with psyco.
+# Tried again on home machine with all other apps closed.
+# Solved successfully, but took 5 minutes.  See results at bottom of file.
+# Dramatic improvement after from psyco.classes import *
+dim 9
+ADD  29 [ 11 12 13 14 21 31 41 ] 4
+MUL  10 [ 15 25 ] 1
+MUL  20 [ 16 17 ] 0
+MUL  72 [ 26 27 ] 3
+SUB  3 [ 18 19 ] 1
+DIV  2 [ 28 29 ] 0
+MUL  36 [ 22 23 33 ] 1
+MUL  1764 [ 24 34 35 36 ] 2
+MUL  54 [ 37 47 57 ] 1
+MUL  2 [ 38 39 49 ] 2
+ADD  11 [ 48 58 ] 0
+ADD  25 [ 59 68 69 78 ] 1
+MUL  7560 [ 79 89 97 98 99 ] 2
+NONE  8 [ 32 ] 0
+ADD  23 [ 42 43 53 63 ] 3
+MUL  288 [ 44 45 54 55 ] 1
+SUB  2 [ 46 56 ] 0
+MUL  45 [ 51 52 ] 0
+DIV  4 [ 61 71 ] 1
+MUL  6 [ 62 72 ] 2
+DIV  3 [ 64 65 ] 0
+MUL  48 [ 66 67 76 ] 2
+MUL  16 [ 77 87 88 ] 0
+ADD  11 [ 86 95 96 ] 1
+DIV  4 [ 84 85 ] 2
+MUL  35 [ 74 75 ] 1
+MUL  360 [ 73 83 93 94 ] 0
+SUB  8 [ 82 92 ] 1
+ADD  13 [ 81 91 ] 0
+#
+Solution
+8 7 3 1 2 4 5 9 6 
+3 6 1 7 5 9 8 2 4 
+5 8 6 9 4 7 3 1 2 
+2 4 7 8 6 5 9 3 1 
+9 5 4 6 1 3 2 8 7 
+4 2 8 3 9 1 6 7 5 
+1 3 2 5 7 8 4 6 9 
+7 9 5 2 8 6 1 4 3 
+6 1 9 4 3 2 7 5 8 
+#
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 0: length 41256: ADD  29 [ 11 12 13 14 21 31 41 ]
+# Cage 1: length 2: MUL  10 [ 15 25 ]
+# Cage 2: length 2: MUL  20 [ 16 17 ]
+# Cage 3: length 2: MUL  72 [ 26 27 ]
+# Cage 4: length 12: SUB  3 [ 18 19 ]
+# Cage 5: length 8: DIV  2 [ 28 29 ]
+# Cage 6: length 15: MUL  36 [ 22 23 33 ]
+# Cage 7: length 4: MUL  1764 [ 24 34 35 36 ]
+# Cage 8: length 12: MUL  54 [ 37 47 57 ]
+# Cage 9: length 1: MUL  2 [ 38 39 49 ]
+# Cage 10: length 8: ADD  11 [ 48 58 ]
+# Cage 11: length 228: ADD  25 [ 59 68 69 78 ]
+# Cage 12: length 240: MUL  7560 [ 79 89 97 98 99 ]
+# Cage 13: length 1: NONE  8 [ 32 ]
+# Cage 14: length 280: ADD  23 [ 42 43 53 63 ]
+# Cage 15: length 72: MUL  288 [ 44 45 54 55 ]
+# Cage 16: length 14: SUB  2 [ 46 56 ]
+# Cage 17: length 2: MUL  45 [ 51 52 ]
+# Cage 18: length 4: DIV  4 [ 61 71 ]
+# Cage 19: length 4: MUL  6 [ 62 72 ]
+# Cage 20: length 6: DIV  3 [ 64 65 ]
+# Cage 21: length 19: MUL  48 [ 66 67 76 ]
+# Cage 22: length 8: MUL  16 [ 77 87 88 ]
+# Cage 23: length 35: ADD  11 [ 86 95 96 ]
+# Cage 24: length 4: DIV  4 [ 84 85 ]
+# Cage 25: length 2: MUL  35 [ 74 75 ]
+# Cage 26: length 80: MUL  360 [ 73 83 93 94 ]
+# Cage 27: length 2: SUB  8 [ 82 92 ]
+# Cage 28: length 6: ADD  13 [ 81 91 ]
+# 1185730 updates 42.7 seconds
+# On home machine: 1184162 updates 300.3 seconds
+# After from psyco.classes import *: 1184948 updates 66.9 seconds
+# This was on home machine also.
+#
+# from psyco.classes import *, no psyco.bind: 1181191 updates 119.6 seconds
+# Update message worked properly, lots of disk usage
+# Another trial: 1185730 updates 101.4 seconds
+#
+# with psyco.bind(self.backtrack)
+# All classes defined as class <classname>()
+# 1185730 updates 63.5 seconds
+# Update message stoppped changing after 2 seconds, no disk problem
+
+# All classes specifically subcall psyco.compact
+# psyco.bind(Dancer)
+# Update message as above
+# 1185950 updates 63.3 seconds
+
+# Withut iteration (just shoot meO
+# 845550 updates 17.4 seconds

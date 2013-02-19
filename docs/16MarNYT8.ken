@@ -1,0 +1,76 @@
+# 16MarNYT8.ken
+# Tuesday, 16 March 2010 17:15:12
+dim 8
+MUL  6 [ 11 21 31 ] 2
+DIV  2 [ 12 13 ] 0
+MUL  210 [ 14 15 16 ] 3
+ADD  9 [ 17 18 ] 1
+ADD  26 [ 22 23 32 33 ] 3
+MUL  24 [ 24 25 34 ] 0
+SUB  3 [ 26 27 ] 2
+DIV  3 [ 28 38 ] 0
+ADD  11 [ 37 47 ] 3
+SUB  1 [ 35 36 ] 1
+SUB  2 [ 41 51 ] 1
+SUB  1 [ 42 52 ] 2
+DIV  2 [ 43 44 ] 1
+ADD  8 [ 45 46 ] 0
+SUB  2 [ 48 58 ] 1
+SUB  1 [ 53 54 ] 0
+SUB  1 [ 55 56 ] 1
+DIV  2 [ 57 67 ] 2
+ADD  16 [ 61 71 81 ] 0
+ADD  10 [ 62 63 72 ] 3
+NONE  5 [ 73 ] 0
+SUB  7 [ 82 83 ] 1
+ADD  12 [ 84 85 86 ] 0
+SUB  4 [ 87 88 ] 2
+MUL  90 [ 64 74 75 ] 2
+SUB  7 [ 65 66 ] 0
+SUB  5 [ 76 77 ] 1
+DIV  2 [ 68 78 ] 0
+#
+Solution
+3 4 2 7 6 5 8 1 
+1 5 6 3 8 7 4 2 
+2 7 8 1 4 3 5 6 
+8 3 4 2 7 1 6 5 
+6 2 7 8 5 4 1 3 
+7 6 3 5 1 8 2 4 
+4 1 5 6 3 2 7 8 
+5 8 1 4 2 6 3 7 
+#
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 0: length 6: MUL  6 [ 11 21 31 ]
+# Cage 1: length 8: DIV  2 [ 12 13 ]
+# Cage 2: length 6: MUL  210 [ 14 15 16 ]
+# Cage 3: length 8: ADD  9 [ 17 18 ]
+# Cage 4: length 40: ADD  26 [ 22 23 32 33 ]
+# Cage 5: length 19: MUL  24 [ 24 25 34 ]
+# Cage 6: length 10: SUB  3 [ 26 27 ]
+# Cage 7: length 4: DIV  3 [ 28 38 ]
+# Cage 8: length 6: ADD  11 [ 37 47 ]
+# Cage 9: length 14: SUB  1 [ 35 36 ]
+# Cage 10: length 12: SUB  2 [ 41 51 ]
+# Cage 11: length 14: SUB  1 [ 42 52 ]
+# Cage 12: length 8: DIV  2 [ 43 44 ]
+# Cage 13: length 6: ADD  8 [ 45 46 ]
+# Cage 14: length 12: SUB  2 [ 48 58 ]
+# Cage 15: length 14: SUB  1 [ 53 54 ]
+# Cage 16: length 14: SUB  1 [ 55 56 ]
+# Cage 17: length 8: DIV  2 [ 57 67 ]
+# Cage 18: length 30: ADD  16 [ 61 71 81 ]
+# Cage 19: length 28: ADD  10 [ 62 63 72 ]
+# Cage 20: length 1: NONE  5 [ 73 ]
+# Cage 21: length 2: SUB  7 [ 82 83 ]
+# Cage 22: length 36: ADD  12 [ 84 85 86 ]
+# Cage 23: length 8: SUB  4 [ 87 88 ]
+# Cage 24: length 6: MUL  90 [ 64 74 75 ]
+# Cage 25: length 2: SUB  7 [ 65 66 ]
+# Cage 26: length 6: SUB  5 [ 76 77 ]
+# Cage 27: length 8: DIV  2 [ 68 78 ]
+# 11076 updates 0.5 seconds
+# 
+# 

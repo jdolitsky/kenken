@@ -1,0 +1,42 @@
+# hard88-6.ken
+# Monday, 31 August 2009 20:51:56
+# Perhaps the hardest one I've ever done: 90 minutes
+# AND the reasoning was inomplete!  It took me quite
+# a number of tries before I was able to do it
+# correctly.
+dim 8
+DIV 4 [ 11 21 ] 2
+ADD 17 [ 12 22 23 ] 1
+DIV 2 [ 13 14 ] 2
+MUL 35 [ 15 16 ] 1
+DIV 2 [ 17 27 ] 2
+SUB 1 [ 18 28 ] 0
+ADD 15 [ 24 25 34 35 ] 0
+ADD 16 [ 26 36 45 46 ] 3
+ADD 7 [ 31 32 ] 0
+ADD 12 [ 33 43 44 ] 2
+ADD 15 [ 37 38 ] 1
+ADD 14 [ 47 48 58 ] 0
+ADD 14 [ 41 42 51 ] 1
+MUL 126 [ 52 62 63 ] 2
+SUB 2 [ 53 54 ] 0
+SUB 3 [ 55 56 ] 1
+ADD 10 [ 57 66 67 ] 2
+ADD 5 [ 68 78 ] 1
+ADD 14 [ 61 71 ] 0
+SUB 1 [ 64 74 ] 1
+DIV 3 [ 65 75 ] 0
+ADD 10 [ 72 81 82 ] 1
+MUL 90 [ 73 83 84 ] 0
+ADD 23 [ 76 85 86 ] 1
+ADD 10 [ 77 87 88 ] 0
+#
+Solution
+ 4 8 1 2 7 5 3 6
+ 1 5 4 8 2 3 6 7
+ 5 2 3 1 4 6 7 8
+ 3 4 2 7 6 1 8 5
+ 7 3 8 6 5 2 4 1
+ 8 6 7 5 1 4 2 3
+ 6 7 5 4 3 8 1 2
+ 2 1 6 3 8 7 5 4

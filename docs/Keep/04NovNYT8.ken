@@ -1,0 +1,74 @@
+# 04NovNYT8.ken
+# Wednesday, 04 November 2009 09:43:50
+# Very hard.  I couldn't do it without
+# trial and error, on two attempts.
+dim 8
+SUB  1 [ 11 12 ] 0
+DIV  2 [ 13 23 ] 2
+MUL  56 [ 14 15 ] 0
+ADD  9 [ 16 26 ] 3
+DIV  3 [ 17 18 ] 0
+SUB  6 [ 21 22 ] 1
+MUL  240 [ 24 34 44 ] 3
+ADD  6 [ 25 35 45 ] 2
+ADD  11 [ 27 28 ] 1
+MUL  48 [ 31 41 51 ] 2
+SUB  6 [ 32 33 ] 0
+ADD  10 [ 36 37 ] 0
+ADD  15 [ 38 48 58 ] 3
+SUB  2 [ 42 43 ] 1
+SUB  5 [ 46 47 ] 1
+SUB  3 [ 52 53 ] 0
+DIV  2 [ 54 64 ] 1
+SUB  2 [ 55 65 ] 3
+DIV  3 [ 56 57 ] 0
+DIV  4 [ 61 71 ] 0
+ADD  15 [ 62 63 73 ] 2
+ADD  24 [ 66 67 68 76 78 ] 2
+ADD  21 [ 72 81 82 83 ] 1
+DIV  3 [ 74 84 ] 0
+SUB  2 [ 75 85 ] 1
+NONE  7 [ 77 ] 1
+MUL  80 [ 86 87 88 ] 0
+#
+Solution
+5 6 2 7 8 4 3 1 
+7 1 4 6 2 5 8 3 
+2 7 1 8 3 6 4 5 
+3 8 6 5 1 7 2 4 
+8 2 5 4 7 3 1 6 
+1 4 3 2 5 8 6 7 
+4 5 8 3 6 1 7 2 
+6 3 7 1 4 2 5 8 
+#
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 0: length 14: SUB  1 [ 11 12 ]
+# Cage 1: length 8: DIV  2 [ 13 23 ]
+# Cage 2: length 2: MUL  56 [ 14 15 ]
+# Cage 3: length 8: ADD  9 [ 16 26 ]
+# Cage 4: length 4: DIV  3 [ 17 18 ]
+# Cage 5: length 4: SUB  6 [ 21 22 ]
+# Cage 6: length 6: MUL  240 [ 24 34 44 ]
+# Cage 7: length 6: ADD  6 [ 25 35 45 ]
+# Cage 8: length 6: ADD  11 [ 27 28 ]
+# Cage 9: length 18: MUL  48 [ 31 41 51 ]
+# Cage 10: length 4: SUB  6 [ 32 33 ]
+# Cage 11: length 6: ADD  10 [ 36 37 ]
+# Cage 12: length 36: ADD  15 [ 38 48 58 ]
+# Cage 13: length 12: SUB  2 [ 42 43 ]
+# Cage 14: length 6: SUB  5 [ 46 47 ]
+# Cage 15: length 10: SUB  3 [ 52 53 ]
+# Cage 16: length 8: DIV  2 [ 54 64 ]
+# Cage 17: length 12: SUB  2 [ 55 65 ]
+# Cage 18: length 4: DIV  3 [ 56 57 ]
+# Cage 19: length 4: DIV  4 [ 61 71 ]
+# Cage 20: length 39: ADD  15 [ 62 63 73 ]
+# Cage 21: length 1242: ADD  24 [ 66 67 68 76 78 ]
+# Cage 22: length 172: ADD  21 [ 72 81 82 83 ]
+# Cage 23: length 4: DIV  3 [ 74 84 ]
+# Cage 24: length 12: SUB  2 [ 75 85 ]
+# Cage 25: length 1: NONE  7 [ 77 ]
+# Cage 26: length 6: MUL  80 [ 86 87 88 ]
+# 174857 updates 1.7 seconds

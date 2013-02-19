@@ -1,0 +1,87 @@
+# 28Dec9.ken
+# Monday, 28 December 2009 09:55:56
+dim 9
+MUL  105 [ 11 12 22 ] 0
+MUL  10 [ 13 23 ] 1
+MUL  108 [ 14 15 16 ] 0
+SUB  8 [ 17 27 ] 1
+MUL  192 [ 18 19 28 29 ] 0
+SUB  2 [ 21 31 ] 2
+ADD  12 [ 24 25 35 ] 3
+ADD  15 [ 26 36 37 ] 2
+SUB  1 [ 32 42 ] 1
+MUL  42 [ 33 43 ] 2
+DIV  4 [ 34 44 ] 0
+ADD  17 [ 38 39 ] 1
+MUL  24 [ 45 46 ] 1
+SUB  2 [ 47 48 ] 0
+ADD  17 [ 41 51 ] 0
+ADD  11 [ 49 59 69 ] 2
+MUL  540 [ 52 61 62 72 82 ] 3
+DIV  3 [ 53 54 ] 1
+SUB  3 [ 55 56 ] 0
+DIV  2 [ 57 58 ] 1
+ADD  17 [ 63 73 ] 2
+SUB  1 [ 64 74 ] 0
+DIV  2 [ 65 66 ] 1
+DIV  2 [ 67 68 ] 0
+MUL  90 [ 75 84 85 ] 3
+MUL  180 [ 76 77 86 ] 2
+MUL  21 [ 78 79 ] 1
+SUB  5 [ 71 81 ] 1
+DIV  4 [ 83 93 ] 1
+SUB  1 [ 91 92 ] 0
+ADD  15 [ 94 95 96 ] 0
+SUB  1 [ 87 97 ] 1
+MUL  756 [ 88 89 98 99 ] 0
+#
+Solution
+7 3 5 6 9 2 1 4 8 
+4 5 2 3 8 7 9 6 1 
+2 7 6 4 1 3 5 8 9 
+9 8 7 1 4 6 3 5 2 
+8 6 3 9 7 4 2 1 5 
+5 9 8 7 2 1 6 3 4 
+1 2 9 8 6 5 4 7 3 
+6 1 4 5 3 9 8 2 7 
+3 4 1 2 5 8 7 9 6 
+#
+# Cell coordinates displayed as rc, where r = row and c = column.  
+# For example, 31 means row 3, column 1
+# 
+# Cage 0: length 6: MUL  105 [ 11 12 22 ]
+# Cage 1: length 2: MUL  10 [ 13 23 ]
+# Cage 2: length 12: MUL  108 [ 14 15 16 ]
+# Cage 3: length 2: SUB  8 [ 17 27 ]
+# Cage 4: length 60: MUL  192 [ 18 19 28 29 ]
+# Cage 5: length 14: SUB  2 [ 21 31 ]
+# Cage 6: length 45: ADD  12 [ 24 25 35 ]
+# Cage 7: length 52: ADD  15 [ 26 36 37 ]
+# Cage 8: length 16: SUB  1 [ 32 42 ]
+# Cage 9: length 2: MUL  42 [ 33 43 ]
+# Cage 10: length 4: DIV  4 [ 34 44 ]
+# Cage 11: length 2: ADD  17 [ 38 39 ]
+# Cage 12: length 4: MUL  24 [ 45 46 ]
+# Cage 13: length 14: SUB  2 [ 47 48 ]
+# Cage 14: length 2: ADD  17 [ 41 51 ]
+# Cage 15: length 30: ADD  11 [ 49 59 69 ]
+# Cage 16: length 294: MUL  540 [ 52 61 62 72 82 ]
+# Cage 17: length 6: DIV  3 [ 53 54 ]
+# Cage 18: length 12: SUB  3 [ 55 56 ]
+# Cage 19: length 8: DIV  2 [ 57 58 ]
+# Cage 20: length 2: ADD  17 [ 63 73 ]
+# Cage 21: length 16: SUB  1 [ 64 74 ]
+# Cage 22: length 8: DIV  2 [ 65 66 ]
+# Cage 23: length 8: DIV  2 [ 67 68 ]
+# Cage 24: length 12: MUL  90 [ 75 84 85 ]
+# Cage 25: length 7: MUL  180 [ 76 77 86 ]
+# Cage 26: length 2: MUL  21 [ 78 79 ]
+# Cage 27: length 8: SUB  5 [ 71 81 ]
+# Cage 28: length 4: DIV  4 [ 83 93 ]
+# Cage 29: length 16: SUB  1 [ 91 92 ]
+# Cage 30: length 48: ADD  15 [ 94 95 96 ]
+# Cage 31: length 16: SUB  1 [ 87 97 ]
+# Cage 32: length 52: MUL  756 [ 88 89 98 99 ]
+# 91481 updates 1.0 seconds
+# 
+# 
